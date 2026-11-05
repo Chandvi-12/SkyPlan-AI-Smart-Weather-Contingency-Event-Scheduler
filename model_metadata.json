@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-11-05T06:43:41.733524",
+  "models": {
+    "rainout": {
+      "model_name": "Rainout Risk Classifier",
+      "algorithm": "Random Forest",
+      "accuracy": 0.955,
+      "precision": 0.9544,
+      "recall": 0.955,
+      "f1_score": 0.9545,
+      "features": [
+        "temperature",
+        "humidity",
+        "rain_probability",
+        "rainfall_mm",
+        "wind_speed"
+      ],
+      "feature_importances": {
+        "temperature": 0.0346,
+        "humidity": 0.048,
+        "rain_probability": 0.3444,
+        "rainfall_mm": 0.4281,
+        "wind_speed": 0.1449
+      },
+      "classes": [
+        "Low Risk",
+        "Moderate Risk",
+        "High Risk"
+      ],
+      "confusion_matrix": [
+        [
+          246,
+          5,
+          0
+        ],
+        [
+          10,
+          106,
+          7
+        ],
+        [
+          0,
+          5,
+          221
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 0.9609375,
+          "recall": 0.9800796812749004,
+          "f1-score": 0.9704142011834319,
+          "support": 251.0
+        },
+        "Moderate Risk": {
+          "precision": 0.9137931034482759,
+          "recall": 0.8617886178861789,
+          "f1-score": 0.8870292887029289,
+          "support": 123.0
+        },
+        "High Risk": {
+          "precision": 0.9692982456140351,
+          "recall": 0.9778761061946902,
+          "f1-score": 0.973568281938326,
+          "support": 226.0
+        },
+        "accuracy": 0.955,
+        "macro avg": {
+          "precision": 0.9480096163541036,
+          "recall": 0.9399148017852564,
+          "f1-score": 0.943670590608229,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.9544221128881831,
+          "recall": 0.955,
+          "f1-score": 0.9545083312092721,
+          "support": 600.0
+        }
+      }
+    },
+    "heat": {
+      "model_name": "Heat Risk Classifier",
+      "algorithm": "Random Forest",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "features": [
+        "temperature",
+        "humidity",
+        "wind_speed",
+        "heat_index"
+      ],
+      "feature_importances": {
+        "temperature": 0.254,
+        "humidity": 0.0266,
+        "wind_speed": 0.0008,
+        "heat_index": 0.7186
+      },
+      "classes": [
+        "Low Risk",
+        "Moderate Risk",
+        "High Risk"
+      ],
+      "confusion_matrix": [
+        [
+          242,
+          0,
+          0
+        ],
+        [
+          0,
+          84,
+          0
+        ],
+        [
+          0,
+          0,
+          274
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 242.0
+        },
+        "Moderate Risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 84.0
+        },
+        "High Risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 274.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 600.0
+        }
+      }
+    }
+  }
+}
